@@ -3,22 +3,22 @@
 }
 
 .input {
-  border: 1px solid #eee;
+  border: 1px solid var(--grey-1);
   display: block;
   width: 100%;
   font-size: 1rem;
   padding: 0.8rem;
   border-radius: 0.4rem;
-  background: #eee;
+  background: var(--grey-1);
   transition: 0.2s;
 }
 
 .input:hover,
 .input:focus {
   outline: none;
-  border-color: #fb1;
-  background: #fff;
-  box-shadow: 0 0 0 3px #fea;
+  border-color: var(--primary);
+  background: var(--white);
+  box-shadow: 0 0 0 3px var(--primary-light);
 }
 
 .label {
@@ -29,7 +29,7 @@
 }
 
 .error {
-  color: #f31;
+  color: var(--mesage-error);
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
