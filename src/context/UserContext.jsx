@@ -63,6 +63,8 @@ export const UserContextProvider = ({ children }) => {
         } finally {
           setLoading(false);
         }
+      } else {
+        setLogin(false);
       }
     };
     autoLogin();
