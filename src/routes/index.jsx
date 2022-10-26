@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../components/Home';
 import Login from '../components/LoginComponents/Login';
 import ProtectedRoute from '../components/ProtectedRoute';
-import User from '../components/User';
+import User from '../components/UserComponents/User';
 
 export const RoutesApp = () => {
   return (
