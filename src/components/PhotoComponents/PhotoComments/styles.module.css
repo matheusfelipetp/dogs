@@ -4,6 +4,19 @@
   padding: 0 2rem;
 }
 
+.comments::-webkit-scrollbar {
+  width: 10px;
+}
+
+.comments::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.comments::-webkit-scrollbar-thumb {
+  background-color: var(--grey-1);
+  border-radius: 20px;
+}
+
 .comments li {
   margin-bottom: 0.5rem;
   line-height: 1.2;
