@@ -4,6 +4,7 @@ import Login from '../components/LoginComponents/Login';
 import Photo from '../components/PhotoComponents/Photo';
 import ProtectedRoute from '../components/ProtectedRoute';
 import User from '../components/UserComponents/User';
+import UserProfile from '../components/UserComponents/UserProfile';
 
 export const RoutesApp = () => {
   return (
@@ -19,6 +20,8 @@ export const RoutesApp = () => {
         }
       ></Route>
       <Route path="foto/:id" element={<Photo />}></Route>
+      <Route path="perfil/:user" element={<UserProfile />}></Route>
+      <Route path="perfil/:user/foto/:id" element={<Photo />}></Route>
     </Routes>
   );
 };
