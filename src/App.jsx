@@ -7,11 +7,13 @@ import { UserContextProvider } from './context/UserContext';
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <UserContextProvider>
           <Header />
-          <RoutesApp />
+          <main className="AppBody">
+            <RoutesApp />
+          </main>
           <Footer />
         </UserContextProvider>
       </BrowserRouter>
