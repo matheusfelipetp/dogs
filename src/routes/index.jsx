@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from '../components/Home';
 import Login from '../components/LoginComponents/Login';
+import Photo from '../components/PhotoComponents/Photo';
 import ProtectedRoute from '../components/ProtectedRoute';
 import User from '../components/UserComponents/User';
 
@@ -17,6 +18,7 @@ export const RoutesApp = () => {
           </ProtectedRoute>
         }
       ></Route>
+      <Route path="foto/:id" element={<Photo />}></Route>
     </Routes>
   );
 };
