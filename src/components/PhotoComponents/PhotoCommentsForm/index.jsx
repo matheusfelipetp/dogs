@@ -13,7 +13,7 @@ const PhotoCommentsForm = ({ id, setComments }) => {
     e.preventDefault();
     const token = localStorage.getItem('@dogs:token');
     const { url, options } = COMMENT_POST(id, { comment }, token);
-    const { response, json } = await request(url, options);
+    const [response, json] = await request(url, options);
 
     if (response.ok) {
       setComment('');
