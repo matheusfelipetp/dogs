@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import { Link } from 'react-router-dom';
 import styles from './styles.module.css';
 import PhotoComments from '../PhotoComments';
@@ -32,7 +33,7 @@ const PhotoContent = ({ data, single }) => {
           <ul className={styles.attributes}>
             <li>{photo.peso} kg</li>
             <li>
-              {photo.idade === 1 ? `${photo.idade} ano` : `${photo.idade} anos`}
+              {photo.idade == 1 ? `${photo.idade} ano` : `${photo.idade} anos`}
             </li>
           </ul>
         </div>
